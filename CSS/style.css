@@ -848,3 +848,23 @@ h2 {
 
 
 }
+.service-card ul {
+
+    text-align:left;
+    padding-left:20px;
+
+}
+
+
+.service-card li {
+
+    margin-bottom:8px;
+
+}
+
+
+.process {
+
+    background:white;
+
+}
