@@ -868,3 +868,55 @@ h2 {
     background:white;
 
 }
+/* ==========================
+   REVIEWS PAGE
+========================== */
+
+
+.review-container {
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+
+}
+
+
+.review-box {
+
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.10);
+
+    text-align:center;
+
+}
+
+
+.stars {
+
+    color:#C58B45;
+    font-size:25px;
+
+}
+
+
+.review-box h3 {
+
+    color:#C58B45;
+
+}
+
+
+
+@media(max-width:700px){
+
+.review-container {
+
+    grid-template-columns:1fr;
+
+}
+
+}
