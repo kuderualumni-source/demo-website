@@ -27,6 +27,8 @@ img {
 }
 
 
+
+
 /* ==========================
    HEADER
 ========================== */
@@ -45,9 +47,11 @@ header {
 
     max-width:1200px;
     margin:auto;
+
     display:flex;
     align-items:center;
     justify-content:space-between;
+
     gap:20px;
 
 }
@@ -64,8 +68,8 @@ header {
 .logo h1 {
 
     margin:0;
-    color:#D89B4A;
     font-size:32px;
+    color:#D89B4A;
 
 }
 
@@ -79,6 +83,8 @@ header {
 
 
 
+
+
 /* ==========================
    NAVIGATION
 ========================== */
@@ -88,21 +94,24 @@ nav {
 
     display:flex;
     gap:12px;
-    flex-wrap:wrap;
     justify-content:center;
+    flex-wrap:wrap;
 
 }
 
 
-
 nav a {
 
+    background:#5A4634;
     color:white;
+
     text-decoration:none;
     font-weight:bold;
+
     padding:8px 15px;
+
     border-radius:20px;
-    background:#5A4634;
+
     transition:0.3s;
 
 }
@@ -111,9 +120,24 @@ nav a {
 nav a:hover {
 
     background:#D89B4A;
+
+}
+
+
+
+
+.menu-toggle {
+
+    display:none;
+
+    font-size:32px;
+
+    cursor:pointer;
+
     color:white;
 
 }
+
 
 
 
@@ -121,20 +145,19 @@ nav a:hover {
 .quote-btn {
 
     background:#D89B4A;
+
     color:white;
+
     padding:12px 22px;
+
     border-radius:25px;
+
     text-decoration:none;
+
     font-weight:bold;
 
 }
 
-
-.quote-btn:hover {
-
-    background:#A66D32;
-
-}
 
 
 
@@ -146,7 +169,9 @@ nav a:hover {
 
 .hero {
 
+
     min-height:600px;
+
 
     background:
 
@@ -157,34 +182,47 @@ nav a:hover {
 
     url("../images/hero.jpg");
 
+
     background-size:cover;
+
     background-position:center;
 
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
 
     text-align:center;
 
+
 }
+
 
 
 
 .hero-content {
 
     max-width:800px;
-    color:white;
+
     padding:20px;
 
+    color:white;
+
 }
+
 
 
 .hero h2 {
 
-    font-size:50px;
+    font-size:52px;
+
     line-height:1.2;
 
 }
+
 
 
 .hero p {
@@ -195,40 +233,57 @@ nav a:hover {
 
 
 
+
+
 .button {
 
+
     display:inline-block;
+
     background:#D89B4A;
+
     color:white;
+
     padding:14px 30px;
+
     border-radius:25px;
+
     text-decoration:none;
+
     font-weight:bold;
+
 
 }
 
 
 
 
+
 /* ==========================
-   GENERAL
+   GENERAL SECTIONS
 ========================== */
 
 
 section {
 
     max-width:1200px;
+
     margin:auto;
+
     padding:60px 20px;
 
 }
 
 
+
 h2 {
 
     text-align:center;
+
     color:#2B2118;
+
     font-size:36px;
+
     margin-bottom:35px;
 
 }
@@ -251,9 +306,13 @@ p {
 
 .stats {
 
+
     display:grid;
+
     grid-template-columns:repeat(4,1fr);
+
     gap:20px;
+
 
 }
 
@@ -261,11 +320,17 @@ p {
 
 .stat-box {
 
+
     background:white;
+
     padding:30px;
+
     border-radius:15px;
+
     text-align:center;
+
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
 
 }
 
@@ -273,9 +338,13 @@ p {
 
 .stat-box h3 {
 
+
     color:#D89B4A;
+
     font-size:40px;
+
     margin:0;
+
 
 }
 
@@ -290,9 +359,13 @@ p {
 
 .about-intro {
 
+
     display:flex;
+
     gap:40px;
+
     align-items:center;
+
 
 }
 
@@ -309,7 +382,9 @@ p {
 
 .about-image img {
 
+
     border-radius:15px;
+
 
 }
 
@@ -324,9 +399,13 @@ p {
 
 .service-container {
 
+
     display:grid;
+
     grid-template-columns:repeat(4,1fr);
+
     gap:25px;
+
 
 }
 
@@ -334,11 +413,17 @@ p {
 
 .service-card {
 
+
     background:white;
-    padding:25px;
+
+    padding:30px;
+
     border-radius:15px;
+
     text-align:center;
+
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
 
 }
 
@@ -354,14 +439,6 @@ p {
 .service-card ul {
 
     text-align:left;
-    padding-left:20px;
-
-}
-
-
-.service-card li {
-
-    margin-bottom:8px;
 
 }
 
@@ -370,27 +447,37 @@ p {
 
 
 /* ==========================
-   FEATURES
+   FEATURES / PROCESS
 ========================== */
 
 
 .features,
 .steps {
 
+
     display:grid;
+
     grid-template-columns:repeat(4,1fr);
-    gap:20px;
+
+    gap:25px;
+
 
 }
+
 
 
 .features div,
 .steps div {
 
+
     background:white;
+
     padding:25px;
+
     border-radius:15px;
+
     text-align:center;
+
 
 }
 
@@ -414,9 +501,13 @@ p {
 
 .project-gallery {
 
+
     display:grid;
+
     grid-template-columns:repeat(3,1fr);
-    gap:25px;
+
+    gap:30px;
+
 
 }
 
@@ -424,11 +515,17 @@ p {
 
 .project-card {
 
+
     background:white;
+
     border-radius:15px;
+
     overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
     text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
 
 }
 
@@ -436,9 +533,13 @@ p {
 
 .project-card img {
 
+
     width:100%;
+
     height:250px;
+
     object-fit:cover;
+
 
 }
 
@@ -461,28 +562,43 @@ p {
 
 .review-container {
 
+
     display:grid;
+
     grid-template-columns:repeat(2,1fr);
-    gap:25px;
+
+    gap:30px;
+
 
 }
+
 
 
 .review-box {
 
+
     background:white;
+
     padding:30px;
+
     border-radius:15px;
+
     text-align:center;
+
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
 
 }
 
 
+
 .stars {
 
+
     color:#D89B4A;
+
     font-size:25px;
+
 
 }
 
@@ -497,9 +613,13 @@ p {
 
 .contact-section {
 
+
     display:grid;
+
     grid-template-columns:1fr 1fr;
+
     gap:30px;
+
 
 }
 
@@ -508,46 +628,84 @@ p {
 .contact-info,
 .contact-form {
 
+
     background:white;
+
     padding:30px;
+
     border-radius:15px;
 
-}
-
-
-.info-box {
-
-    background:#FFF1C9;
-    padding:15px;
-    margin:15px 0;
-    border-radius:10px;
-    text-align:center;
 
 }
+
 
 
 .contact-form input,
 .contact-form textarea,
 .contact-form select {
 
+
     width:100%;
+
     padding:12px;
+
     margin:10px 0;
+
     border-radius:8px;
+
     border:1px solid #ccc;
+
 
 }
 
 
+
 .contact-form button {
 
+
     width:100%;
+
     background:#D89B4A;
+
     color:white;
+
     padding:14px;
+
     border:none;
+
     border-radius:25px;
-    font-size:16px;
+
+
+}
+
+
+
+
+
+/* ==========================
+   PAGE HERO
+========================== */
+
+
+.page-hero {
+
+
+    background:#2B2118;
+
+    color:white;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+
+}
+
+
+
+.page-hero h2 {
+
+    color:white;
 
 }
 
@@ -562,11 +720,16 @@ p {
 
 .contact-banner {
 
+
     background:#2B2118;
+
     color:white;
+
     text-align:center;
 
+
 }
+
 
 
 .contact-banner h2 {
@@ -586,12 +749,18 @@ p {
 
 footer {
 
+
     background:#17110C;
+
     color:white;
+
     text-align:center;
+
     padding:30px;
 
+
 }
+
 
 
 
@@ -612,6 +781,7 @@ footer {
 }
 
 
+
 .service-container,
 .features,
 .steps {
@@ -621,11 +791,13 @@ footer {
 }
 
 
+
 .stats {
 
     grid-template-columns:repeat(2,1fr);
 
 }
+
 
 
 .project-gallery {
@@ -635,18 +807,13 @@ footer {
 }
 
 
-.contact-section {
-
-    grid-template-columns:1fr;
-
-}
-
 
 .about-intro {
 
     flex-direction:column;
 
 }
+
 
 
 .about-image,
@@ -657,7 +824,16 @@ footer {
 }
 
 
+
+.contact-section {
+
+    grid-template-columns:1fr;
+
 }
+
+
+}
+
 
 
 
@@ -677,9 +853,18 @@ header {
 }
 
 
+
 .logo h1 {
 
-    font-size:25px;
+    font-size:24px;
+
+}
+
+
+
+.menu-toggle {
+
+    display:block;
 
 }
 
@@ -687,15 +872,30 @@ header {
 
 nav {
 
+
+    display:none;
+
     flex-direction:column;
+
     width:100%;
 
+
 }
+
+
+
+nav.show {
+
+    display:flex;
+
+}
+
 
 
 nav a {
 
     width:100%;
+
     text-align:center;
 
 }
@@ -705,6 +905,7 @@ nav a {
 .quote-btn {
 
     width:100%;
+
     text-align:center;
 
 }
@@ -724,6 +925,7 @@ nav a {
     font-size:30px;
 
 }
+
 
 
 .hero p {
@@ -757,7 +959,9 @@ h2 {
 .project-gallery,
 .review-container {
 
+
     grid-template-columns:1fr;
+
 
 }
 
@@ -766,15 +970,6 @@ h2 {
 .project-card img {
 
     height:220px;
-
-}
-
-
-
-.contact-info,
-.contact-form {
-
-    padding:20px;
 
 }
 
